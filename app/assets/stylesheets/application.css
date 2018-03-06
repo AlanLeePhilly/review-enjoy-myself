@@ -13,3 +13,38 @@
  *= require_tree .
  *= require_self
  */
+
+header {
+
+}
+ html body {
+  background: url(https://fanart.tv/api/download.php?type=download&image=115035&section=2)no-repeat;
+  padding: 10%;
+  padding-top: 275px;
+  background-color: #386472;
+}
+.flash{
+  font-size: 400%;
+  color: red;
+}
+h1 {
+  color: #A4C6C9;
+  font-size: 300%;
+}
+a {
+  font-size: 150%;
+  color: white
+}
+input {
+  font-size: 200%;
+  background-color: white;
+}
+
+li {
+  color: white;
+  font-size: 35px;
+}
+
+p {
+  font-size: 125%;
+}

@@ -1,0 +1,13 @@
+<h1>Review Enjoy Myself<h1>
+
+
+
+<h2>Choose Your Phishtory</h2>
+  <ul>
+    <% @shows.each do |show| %>
+      <li><%= link_to "#{show.show_date} - #{show.location}", show_reviews_path(show) %></li>
+    <% end %>
+  </ul>
+  <br>
+<h2>OR</h2>
+<%= link_to 'Add New Show!', new_show_path %>

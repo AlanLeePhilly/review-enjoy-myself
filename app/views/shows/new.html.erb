@@ -1,0 +1,19 @@
+<h1>New Show Form!</h1>
+
+<%= form_for(@show) do |f| %>
+  <fieldset>
+    <%= f.label :show_date, 'Date' %></br>
+    <%= f.date_field :show_date %></br>
+
+    <%= f.label :location %></br>
+    <%= f.text_field :location %></br>
+
+    <%= f.label :setlist %></br>
+    <%= f.text_area :setlist %></br>
+
+    <%= f.label :notes %></br>
+    <%= f.text_area :notes %></br>
+
+    <%= f.submit 'Add Show' %>
+  </fieldset>
+<% end %>

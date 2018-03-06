@@ -1,0 +1,26 @@
+<h1><%= "#{@show.show_date} - #{@show.location}" %></h1>
+
+<h2>Setlist:</h2>
+<p><%= @show.setlist %></p>
+
+<h2>Notes:</h2>
+<p><%= @show.notes %></p>
+
+<h2>Reviews:</h2>
+  <% @reviews.each do |review| %>
+    <li><%= review.score %>
+    </br><%= review.body %>)</li></br>
+  <% end %>
+
+<h2>Add a new Review:</h2>
+<%= form_for [@show, @review] do |f| %>
+  <fieldset>
+    <%= f.label :score, 'Score:' %></br>
+    <%= f.text_field :score %></br>
+
+    <%= f.label :body, 'Review' %></br>
+    <%= f.text_field :body %></br>
+</br>
+    <%= f.submit 'Accept!' %>
+  </fieldset>
+<% end %>
